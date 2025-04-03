@@ -18,10 +18,11 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <a href="#workshop" className="text-secondary hover:text-primary transition-colors">Workshop</a>
             <a href="#about" className="text-secondary hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-secondary hover:text-primary transition-colors">Services</a>
             <a href="#faq" className="text-secondary hover:text-primary transition-colors">FAQ</a>
-            <Button className="btn-primary">Contact</Button>
+            <Button className="btn-primary">Sign Up for Free</Button>
           </nav>
           
           {/* Mobile Menu Button */}
@@ -42,6 +43,13 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white py-4 px-4 shadow-lg">
           <nav className="flex flex-col space-y-4">
+            <a 
+              href="#workshop" 
+              className="text-secondary hover:text-primary transition-colors px-2 py-1"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Workshop
+            </a>
             <a 
               href="#about" 
               className="text-secondary hover:text-primary transition-colors px-2 py-1"
@@ -67,7 +75,7 @@ const Header = () => {
               className="btn-primary w-full"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              Sign Up for Free
             </Button>
           </nav>
         </div>

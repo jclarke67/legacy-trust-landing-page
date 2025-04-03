@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const FinalCTA = () => {
   return (
@@ -9,10 +10,11 @@ const FinalCTA = () => {
           Ready to Secure Your Legacy?
         </h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto text-white/90">
-          Take the first step toward peace of mind. Schedule your free consultation today and discover how a personalized estate plan can protect what matters most.
+          Spots are limited—secure your seat today! Take the first step toward peace of mind and discover how a personalized estate plan can protect what matters most.
         </p>
-        <Button className="btn-primary text-lg">
-          Book a Consultation Now
+        <Button className="btn-primary text-lg px-8 py-6 flex items-center gap-2">
+          Claim Your Free Spot Now
+          <ArrowRight className="ml-1 h-5 w-5" />
         </Button>
       </div>
     </div>

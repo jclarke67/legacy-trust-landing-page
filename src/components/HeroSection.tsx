@@ -24,7 +24,7 @@ const HeroSection = () => {
             Protect your assets and provide for your loved ones with personalized legacy planning services from a dedicated attorney.
           </p>
           <Button className="btn-primary text-lg">
-            Schedule a Free Consultation
+            Sign Up for Free
           </Button>
         </div>
       </div>

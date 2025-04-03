@@ -1,4 +1,6 @@
 
+import { Facebook, Instagram, Mail } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -24,13 +26,48 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
-          <p>&copy; {currentYear} Melissa Wilson Legal Services. All rights reserved.</p>
-          <p className="mt-2">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            {" | "}
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+        <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-white/60 text-sm mb-4 md:mb-0">
+            &copy; {currentYear} Integrity Legal. All rights reserved.
           </p>
+          
+          <div className="flex items-center space-x-6">
+            <a 
+              href="https://www.instagram.com/integrity_legal_fl" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-accent transition-colors flex items-center gap-2"
+            >
+              <Instagram className="h-5 w-5" />
+              <span>@integrity_legal_fl</span>
+            </a>
+            
+            <a 
+              href="https://www.facebook.com/integritylegal" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-accent transition-colors"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            
+            <a 
+              href="mailto:contact@integritylegal.com" 
+              className="text-white/80 hover:text-accent transition-colors"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
+          </div>
+        </div>
+        
+        <div className="text-center text-white/60 text-sm mt-4">
+          <a href="https://integritylegal.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            Website: Integrity Legal
+          </a>
+          <span className="mx-2">|</span>
+          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+          <span className="mx-2">|</span>
+          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
         </div>
       </div>
     </footer>

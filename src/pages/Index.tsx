@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import WorkshopSection from "@/components/WorkshopSection";
+import VideoTestimonialSection from "@/components/VideoTestimonialSection";
 import SocialProofSection from "@/components/SocialProofSection";
 import AboutSection from "@/components/AboutSection";
 import FAQSection from "@/components/FAQSection";
@@ -41,9 +43,15 @@ const Index = () => {
       <main className="pt-16">
         <HeroSection />
         
+        <section id="workshop">
+          <WorkshopSection />
+        </section>
+        
         <section id="services">
           <BenefitsSection />
         </section>
+        
+        <VideoTestimonialSection />
         
         <SocialProofSection />
         
