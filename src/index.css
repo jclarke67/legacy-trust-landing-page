@@ -26,8 +26,8 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 263 59% 57%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -53,5 +53,13 @@
 }
 
 .btn-primary {
-  @apply bg-accent text-accent-foreground font-medium px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+  @apply bg-accent text-white font-medium px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+}
+
+.check-item {
+  @apply flex items-start gap-3 mb-4;
+}
+
+.check-icon {
+  @apply text-accent flex-shrink-0 mt-0.5;
 }

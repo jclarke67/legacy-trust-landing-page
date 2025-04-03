@@ -12,8 +12,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-serif font-bold text-primary">Melissa Wilson</h1>
-            <span className="hidden md:inline-block ml-2 text-sm text-secondary/70">Trust Attorney</span>
+            <h1 className="text-2xl font-serif font-bold text-primary">Integrity Legal</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -22,7 +21,7 @@ const Header = () => {
             <a href="#about" className="text-secondary hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-secondary hover:text-primary transition-colors">Services</a>
             <a href="#faq" className="text-secondary hover:text-primary transition-colors">FAQ</a>
-            <Button className="btn-primary">Sign Up for Free</Button>
+            <Button className="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-full">Sign Up for Free</Button>
           </nav>
           
           {/* Mobile Menu Button */}
@@ -72,7 +71,7 @@ const Header = () => {
               FAQ
             </a>
             <Button 
-              className="btn-primary w-full"
+              className="bg-accent hover:bg-accent/90 text-white w-full rounded-full"
               onClick={() => setIsMenuOpen(false)}
             >
               Sign Up for Free

@@ -1,68 +1,72 @@
 
-import { Calendar, MapPin, Mic, Users } from "lucide-react";
+import { Calendar, MapPin, Mic, Users, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WorkshopSection = () => {
+  const benefits = [
+    "Understand the importance of trusts & estate planning",
+    "Learn how to protect assets & minimize taxes",
+    "Avoid probate and secure your family's financial future",
+    "Get expert guidance tailored to yours"
+  ];
+
   return (
-    <div className="py-16 bg-muted">
+    <div className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary">
-          Upcoming Free Workshop
-        </h2>
-        
-        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-primary">
+              Why Attend?
+            </h2>
+            
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-secondary">Estate Planning Workshop</h3>
-              <p className="text-secondary/80">
-                Join our free educational seminar to learn essential strategies for protecting your assets
-                and securing your family's future.
-              </p>
-              
-              <div className="space-y-4 pt-4">
-                <div className="flex items-start gap-3">
-                  <Calendar className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-semibold text-secondary">Date & Time</p>
-                    <p className="text-secondary/80">September 4, 2024</p>
-                  </div>
+              {benefits.map((benefit, index) => (
+                <div key={index} className="check-item">
+                  <CheckCircle className="check-icon h-6 w-6" />
+                  <p className="text-lg text-secondary">{benefit}</p>
                 </div>
-                
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-semibold text-secondary">Location</p>
-                    <p className="text-secondary/80">4413 N. University Drive, Lauderhill, FL, United States, Florida</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Mic className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-semibold text-secondary">Presented by</p>
-                    <p className="text-secondary/80">Melissa Wilson, Certified Trust & Estate Planning Attorney</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Users className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-semibold text-secondary">Who Should Attend?</p>
-                    <p className="text-secondary/80">Homeowners, parents, business owners, retirees</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
             
-            <div className="flex flex-col justify-center items-center">
-              <div className="w-full max-w-sm space-y-6">
-                <div className="text-center">
-                  <p className="text-lg font-bold text-secondary">Spots are limited!</p>
-                  <p className="text-secondary/80">Reserve your seat for this valuable free event today.</p>
+            <div className="mt-10">
+              <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg w-full sm:w-auto">
+                Sign Up for Free
+              </Button>
+            </div>
+          </div>
+          
+          <div className="bg-muted p-8 rounded-lg">
+            <div className="space-y-8">
+              <div className="flex items-start gap-4">
+                <Calendar className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-semibold text-primary mb-1">Date & Time</h3>
+                  <p className="text-secondary/80">September 4, 2024</p>
                 </div>
-                <Button className="btn-primary w-full text-lg py-6">
-                  Claim Your Free Spot Now
-                </Button>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <MapPin className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-semibold text-primary mb-1">Location</h3>
+                  <p className="text-secondary/80">4413 N. University Drive, Lauderhill, FL, United States, Florida</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Mic className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-semibold text-primary mb-1">Presented by</h3>
+                  <p className="text-secondary/80">Certified Trust & Estate Planning Attorney</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Users className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-semibold text-primary mb-1">Who Should Attend?</h3>
+                  <p className="text-secondary/80">Homeowners, parents, business owners, retirees or anyone looking to secure their family's future</p>
+                </div>
               </div>
             </div>
           </div>

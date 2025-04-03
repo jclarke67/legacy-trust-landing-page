@@ -5,24 +5,24 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-secondary text-white py-12">
+    <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-serif font-bold mb-2">Melissa Wilson</h3>
-            <p className="text-white/80">Trust & Estate Planning Attorney</p>
+            <h3 className="text-xl font-serif font-bold mb-2">Integrity Legal</h3>
+            <p className="text-white/80">Trust & Estate Planning Experts</p>
           </div>
           
           <div className="mb-6 md:mb-0 text-center md:text-left">
-            <p className="text-white/80">123 Legal Street, Suite 789</p>
-            <p className="text-white/80">Anytown, ST 12345</p>
+            <p className="text-white/80">4413 N. University Drive</p>
+            <p className="text-white/80">Lauderhill, FL, United States</p>
             <p className="text-white/80">Phone: (555) 123-4567</p>
           </div>
           
           <div className="text-center md:text-right">
-            <p className="text-white/80">Office Hours:</p>
-            <p className="text-white/80">Monday - Friday: 9am - 5pm</p>
-            <p className="text-white/80">Weekends: By appointment only</p>
+            <p className="text-white/80">Workshop Hours:</p>
+            <p className="text-white/80">September 4, 2024: 6pm - 8pm</p>
+            <p className="text-white/80">Registration required</p>
           </div>
         </div>
         
