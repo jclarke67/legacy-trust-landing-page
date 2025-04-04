@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         
         <div className="text-center text-white/60 text-sm mt-4">
-          <a href="https://integritylegal.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Designed by WeCreate Enterprises</a>
+          <a href="https://www.wecreatehub.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Designed by WeCreate Enterprises</a>
           
           
           
