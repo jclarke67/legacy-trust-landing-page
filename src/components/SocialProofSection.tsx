@@ -1,5 +1,5 @@
 
-import { Award, CheckCircle } from "lucide-react";
+import { Award } from "lucide-react";
 
 const SocialProofSection = () => {
   return (
@@ -20,7 +20,7 @@ const SocialProofSection = () => {
           </div>
           
           {/* Video Testimonial */}
-          <div className="mt-16 bg-white p-6 rounded-lg shadow-sm">
+          <div className="bg-white p-6 rounded-lg shadow-sm">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-primary">
               Hear From Our Clients
             </h2>

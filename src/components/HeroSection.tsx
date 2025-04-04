@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <div className="relative min-h-[90vh] flex items-center">
-      {/* Background image with overlay */}
+      {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="public/lovable-uploads/e9a8c92b-c81b-40b7-89ce-2e65957e4d8b.png" 
+          src="public/lovable-uploads/23cc8939-278b-4397-9bfc-9d860c5efd61.png" 
           alt="Legal consultation" 
           className="object-cover w-full h-full"
         />
-        <div className="absolute inset-0 bg-primary/80"></div>
+        <div className="absolute inset-0 bg-primary/90"></div>
       </div>
       
       {/* Content */}

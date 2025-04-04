@@ -7,7 +7,7 @@ const FinalCTA = () => {
     <div className="py-16 bg-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-          Ready to Secure Your Legacy?
+          Don't leave your family's future to chance. Join us for this essential workshop!
         </h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto text-white/90">
           Spots are limited—secure your seat today! Take the first step toward peace of mind and discover how a personalized estate plan can protect what matters most.

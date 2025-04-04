@@ -43,8 +43,8 @@ const FAQSection = () => {
             
             <div className="space-y-4">
               {faqs.slice(0, 3).map((faq, index) => (
-                <div key={index} className="check-item">
-                  <CheckCircle className="check-icon h-6 w-6" />
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="text-accent flex-shrink-0 mt-1 h-6 w-6" />
                   <p className="text-lg font-semibold text-secondary">{faq.question}</p>
                 </div>
               ))}

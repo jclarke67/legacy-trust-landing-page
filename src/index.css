@@ -41,10 +41,18 @@
 
   * {
     @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground font-sans;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -62,4 +70,23 @@
 
 .check-icon {
   @apply text-accent flex-shrink-0 mt-0.5;
+}
+
+/* Better mobile responsiveness */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+  
+  h1 {
+    @apply text-3xl;
+  }
+  
+  h2 {
+    @apply text-2xl;
+  }
+  
+  .btn-primary {
+    @apply w-full;
+  }
 }

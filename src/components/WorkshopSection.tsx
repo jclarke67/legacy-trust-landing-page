@@ -21,8 +21,8 @@ const WorkshopSection = () => {
             
             <div className="space-y-6">
               {benefits.map((benefit, index) => (
-                <div key={index} className="check-item">
-                  <CheckCircle className="check-icon h-6 w-6" />
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="text-accent flex-shrink-0 mt-1 h-6 w-6" />
                   <p className="text-lg text-secondary">{benefit}</p>
                 </div>
               ))}
@@ -49,7 +49,7 @@ const WorkshopSection = () => {
                 <MapPin className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-1">Location</h3>
-                  <p className="text-secondary/80">4413 N. University Drive, Lauderhill, FL, United States, Florida</p>
+                  <p className="text-secondary/80">4413 N. University Drive, Lauderhill, FL<br />or Live Webinar</p>
                 </div>
               </div>
               
@@ -57,7 +57,7 @@ const WorkshopSection = () => {
                 <Mic className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-1">Presented by</h3>
-                  <p className="text-secondary/80">Certified Trust & Estate Planning Attorney</p>
+                  <p className="text-secondary/80">Melissa Wilson, Certified Trust & Estate Planning Attorney</p>
                 </div>
               </div>
               

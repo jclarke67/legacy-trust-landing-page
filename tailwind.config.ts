@@ -26,7 +26,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#1a2252', // deep navy blue
+					DEFAULT: '#1a2252', // deep navy blue as shown in the reference
 					foreground: '#ffffff'
 				},
 				secondary: {
@@ -34,7 +34,7 @@ export default {
 					foreground: '#ffffff'
 				},
 				accent: {
-					DEFAULT: '#7352cf', // purple for CTAs
+					DEFAULT: '#7c5ce0', // purple for CTAs as shown in the reference
 					foreground: '#ffffff'
 				},
 				muted: {
