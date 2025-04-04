@@ -1,7 +1,10 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const VideoTestimonialSection = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,12 +17,11 @@ const VideoTestimonialSection = () => {
             <CardContent className="p-0">
               <div className="aspect-video w-full">
                 <iframe 
-                  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1BDBPbTPKN%2F&show_text=false" 
+                  src="https://www.youtube.com/embed/spZAaFJ7vyk" 
                   className="w-full h-full"
-                  scrolling="no"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  title="Client Testimonial"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
                 ></iframe>
               </div>
             </CardContent>

@@ -110,4 +110,24 @@
     max-width: 100%;
     height: auto;
   }
+  
+  /* Ensure buttons fit on mobile screens */
+  button, .button, [class*="rounded-full"] {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Better padding for mobile */
+  .py-6 {
+    @apply py-4;
+  }
+  
+  .px-8 {
+    @apply px-4;
+  }
+  
+  /* Better text sizing for mobile */
+  .text-lg {
+    @apply text-base;
+  }
 }
