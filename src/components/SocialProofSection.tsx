@@ -1,9 +1,6 @@
-
 import { Award } from "lucide-react";
-
 const SocialProofSection = () => {
-  return (
-    <div className="py-16 bg-muted">
+  return <div className="py-16 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Testimonial */}
@@ -20,25 +17,9 @@ const SocialProofSection = () => {
           </div>
           
           {/* Video Testimonial */}
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-primary">
-              Hear From Our Clients
-            </h2>
-            <div className="aspect-video w-full">
-              <iframe 
-                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1BDBPbTPKN%2F&show_text=false" 
-                className="w-full h-full rounded-lg"
-                scrolling="no"
-                frameBorder="0"
-                allowFullScreen={true}
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              ></iframe>
-            </div>
-          </div>
+          
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default SocialProofSection;

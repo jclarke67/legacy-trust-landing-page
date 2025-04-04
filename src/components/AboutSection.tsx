@@ -1,16 +1,10 @@
-
 const AboutSection = () => {
-  return (
-    <div className="py-16 bg-primary/5">
+  return <div className="py-16 bg-primary/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Attorney Image */}
           <div className="md:w-2/5">
-            <img 
-              src="/lovable-uploads/e9a8c92b-c81b-40b7-89ce-2e65957e4d8b.png" 
-              alt="Melissa Wilson, Trust Attorney" 
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
+            <img alt="Melissa Wilson, Trust Attorney" className="rounded-lg shadow-lg w-full h-auto object-cover" src="/lovable-uploads/20d901ba-8935-464a-88d6-1a293b514066.png" />
           </div>
           
           {/* About Text */}
@@ -33,8 +27,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default AboutSection;
