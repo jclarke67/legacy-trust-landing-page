@@ -49,15 +49,24 @@ const WorkshopSection = () => {
                 <MapPin className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-1">Location</h3>
-                  <p className="text-secondary/80">4413 N. University Drive, Lauderhill, FL<br />or Live Webinar</p>
+                  <p className="text-secondary/80">1560 Sawgrass Corporate Parkway 4th Floor<br />Sunrise, FL 33323<br />or Live Webinar</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
                 <Mic className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
-                <div>
+                <div className="flex-grow">
                   <h3 className="text-xl font-semibold text-primary mb-1">Presented by</h3>
-                  <p className="text-secondary/80">Melissa Wilson, Certified Trust & Estate Planning Attorney</p>
+                  <div className="flex flex-col sm:flex-row items-start gap-4">
+                    <p className="text-secondary/80">Melissa Wilson, Certified Trust & Estate Planning Attorney</p>
+                    <div className="mt-2 sm:mt-0 w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+                      <img 
+                        src="/lovable-uploads/e9a8c92b-c81b-40b7-89ce-2e65957e4d8b.png"
+                        alt="Melissa Wilson" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               

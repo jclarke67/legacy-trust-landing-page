@@ -46,6 +46,8 @@
 
   html {
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   body {
@@ -53,10 +55,17 @@
     overflow-x: hidden;
     width: 100%;
     position: relative;
+    max-width: 100vw;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
+  }
+  
+  /* Fix for images */
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -88,5 +97,17 @@
   
   .btn-primary {
     @apply w-full;
+  }
+  
+  /* Prevent horizontal overflow */
+  .overflow-hidden-mobile {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

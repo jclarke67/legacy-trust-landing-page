@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,16 +7,30 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+          <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-xl font-serif font-bold mb-2">Integrity Legal</h3>
             <p className="text-white/80">Trust & Estate Planning Experts</p>
           </div>
           
           <div className="mb-6 md:mb-0 text-center md:text-left">
-            <p className="text-white/80">4413 N. University Drive</p>
-            <p className="text-white/80">Lauderhill, FL, United States</p>
-            <p className="text-white/80">Phone: (555) 123-4567</p>
+            <div className="flex items-start gap-2">
+              <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-white/80">1560 Sawgrass Corporate Parkway</p>
+                <p className="text-white/80">4th Floor, Sunrise, FL 33323</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-2 mt-2">
+              <Phone className="h-5 w-5 text-accent flex-shrink-0" />
+              <p className="text-white/80">(954) 317-9934</p>
+            </div>
+            
+            <div className="flex items-center gap-2 mt-2">
+              <Mail className="h-5 w-5 text-accent flex-shrink-0" />
+              <p className="text-white/80">info@integritylegalfl.com</p>
+            </div>
           </div>
           
           <div className="text-center md:text-right">
@@ -39,7 +53,7 @@ const Footer = () => {
               className="text-white/80 hover:text-accent transition-colors flex items-center gap-2"
             >
               <Instagram className="h-5 w-5" />
-              <span>@integrity_legal_fl</span>
+              <span className="hidden sm:inline">@integrity_legal_fl</span>
             </a>
             
             <a 
@@ -52,7 +66,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="mailto:contact@integritylegal.com" 
+              href="mailto:info@integritylegalfl.com" 
               className="text-white/80 hover:text-accent transition-colors"
             >
               <Mail className="h-5 w-5" />
