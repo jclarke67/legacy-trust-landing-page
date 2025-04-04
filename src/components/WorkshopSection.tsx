@@ -1,3 +1,4 @@
+
 import { Calendar, MapPin, Mic, Users, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const WorkshopSection = () => {
@@ -18,9 +19,11 @@ const WorkshopSection = () => {
             </div>
             
             <div className="mt-10">
-              <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg w-full sm:w-auto">
-                Sign Up for Free
-              </Button>
+              <a href="https://calendly.com/melissa-dzxu/30min" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg w-full sm:w-auto">
+                  Sign Up for Free
+                </Button>
+              </a>
             </div>
           </div>
           

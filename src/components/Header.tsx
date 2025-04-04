@@ -21,7 +21,9 @@ const Header = () => {
             <a href="#about" className="text-secondary hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-secondary hover:text-primary transition-colors">Services</a>
             <a href="#faq" className="text-secondary hover:text-primary transition-colors">FAQ</a>
-            <Button className="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-full">Sign Up for Free</Button>
+            <a href="https://calendly.com/melissa-dzxu/30min" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-full">Sign Up for Free</Button>
+            </a>
           </nav>
           
           {/* Mobile Menu Button */}
@@ -70,12 +72,16 @@ const Header = () => {
             >
               FAQ
             </a>
-            <Button 
-              className="bg-accent hover:bg-accent/90 text-white w-full rounded-full"
+            <a 
+              href="https://calendly.com/melissa-dzxu/30min" 
+              target="_blank" 
+              rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
             >
-              Sign Up for Free
-            </Button>
+              <Button className="bg-accent hover:bg-accent/90 text-white w-full rounded-full">
+                Sign Up for Free
+              </Button>
+            </a>
           </nav>
         </div>
       )}
