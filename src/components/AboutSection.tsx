@@ -7,30 +7,27 @@ const AboutSection = () => {
           {/* Attorney Image */}
           <div className="md:w-2/5">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              src="/lovable-uploads/e9a8c92b-c81b-40b7-89ce-2e65957e4d8b.png" 
               alt="Melissa Wilson, Trust Attorney" 
-              className="rounded-lg shadow-lg w-full h-auto object-cover aspect-[4/5]"
+              className="rounded-lg shadow-lg w-full h-auto object-cover"
             />
           </div>
           
           {/* About Text */}
           <div className="md:w-3/5">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-secondary">About Melissa Wilson</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">About Melissa Wilson</h2>
             <p className="text-lg mb-4 text-secondary/80">
-              As a newly certified trust attorney with a passion for helping families protect their legacies, I bring a fresh perspective and dedicated approach to estate planning.
+              Melissa Wilson, Esq. began her legal career as a paralegal after graduating from the University of Miami Paralegal Certificate Program in 2007. She initially worked at the Broward County Clerk of Courts as a Docket Clerk before transitioning to the foreclosure industry, where she worked for major law firms representing banks from 2008 to 2014.
             </p>
             <p className="text-lg mb-4 text-secondary/80">
-              My legal education and specialized training in estate law has equipped me with the knowledge and skills needed to navigate the complexities of legacy planning. I believe that every family deserves a personalized approach that reflects their unique values and goals.
-            </p>
-            <p className="text-lg mb-4 text-secondary/80">
-              What sets my practice apart is my commitment to building lasting relationships with clients. I take the time to listen to your concerns, understand your family dynamics, and create solutions that provide both protection and peace of mind.
+              In 2012, Melissa founded a legal document preparation company, assisting pro se litigants with state and federal forms, including divorce, immigration, and expungement documents. She then pursued her dream of becoming an attorney, completing her bachelor's degree in Legal Studies at Nova Southeastern University in 2015 and graduating from Florida Coastal School of Law with her Juris Doctor in 2021, despite the challenges of balancing law school and motherhood. Melissa's journey reflects her unwavering perseverance and commitment to her legal career.
             </p>
             <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-3 text-secondary">Educational Background</h3>
+              <h3 className="text-xl font-semibold mb-3 text-primary">Educational Background</h3>
               <ul className="list-disc list-inside text-secondary/80 space-y-1">
-                <li>J.D., State University Law School</li>
-                <li>Certified Specialist in Estate Planning</li>
-                <li>Member, State Bar Association</li>
+                <li>J.D., Florida Coastal School of Law (2021)</li>
+                <li>B.S. in Legal Studies, Nova Southeastern University (2015)</li>
+                <li>Paralegal Certificate, University of Miami (2007)</li>
               </ul>
             </div>
           </div>

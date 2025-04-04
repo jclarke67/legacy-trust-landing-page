@@ -34,51 +34,39 @@ const FAQSection = () => {
   return (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-16">
-          <div className="lg:col-span-2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
-              Frequently Asked Questions
-            </h2>
-            
-            <div className="hidden lg:block">
-              <h3 className="text-xl md:text-2xl font-bold mb-6 text-primary">
-                Don't leave your family's future to chance
-              </h3>
-              
-              <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg w-full">
-                Reserve Your Spot Now
-              </Button>
-            </div>
-          </div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
+            Don't leave your family's future to chance. Join us for this essential workshop!
+          </h2>
           
-          <div className="lg:col-span-3">
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`item-${index}`} 
-                  className="border border-gray-200 rounded-lg overflow-hidden"
-                >
-                  <AccordionTrigger className="px-6 py-4 text-left font-semibold text-primary hover:no-underline">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 pt-2 text-secondary/80">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-            
-            <div className="mt-8 block lg:hidden">
-              <h3 className="text-xl md:text-2xl font-bold mb-6 text-primary text-center">
-                Don't leave your family's future to chance
-              </h3>
-              
-              <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg w-full">
-                Reserve Your Spot Now
-              </Button>
-            </div>
-          </div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-primary">
+            Frequently Asked Questions
+          </h3>
+          
+          <a href="https://calendly.com/melissa-dzxu/30min" target="_blank" rel="noopener noreferrer" className="inline-block mb-12">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg">
+              Reserve Your Spot Now
+            </Button>
+          </a>
+        </div>
+        
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`} 
+                className="border border-gray-200 rounded-lg overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-primary hover:no-underline">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-2 text-secondary/80">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </div>

@@ -23,9 +23,11 @@ const HeroSection = () => {
           <p className="text-lg sm:text-xl mb-8 text-white/90">
             Join Integrity Legal for an expert-led session on protecting your assets and ensuring your family's future.
           </p>
-          <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg">
-            Reserve Your Spot – Limited Seats Available
-          </Button>
+          <a href="https://calendly.com/melissa-dzxu/30min" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full text-lg">
+              Reserve Your Spot – Limited Seats Available
+            </Button>
+          </a>
         </div>
       </div>
     </div>
